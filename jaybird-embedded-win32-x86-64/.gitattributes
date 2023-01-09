@@ -1,0 +1,5 @@
+*.dll binary
+*.so  binary
+*.res binary
+*.dat binary
+*.msg binary
