@@ -21,7 +21,7 @@ Jaybird:
     <dependency>
         <groupId>org.firebirdsql.embedded</groupId>
         <artifactId>jaybird-firebird-embedded-win32-x86-64</artifactId>
-        <version>4.0.2.0-SNAPSHOT</version>
+        <version>4.0.2.0-alpha-1</version>
     </dependency>
     <dependency>
         <groupId>org.firebirdsql.jdbc</groupId>
