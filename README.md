@@ -6,6 +6,51 @@ Java applications. It requires Jaybird 5.0.0 or higher.
 For now, we only provide releases for Windows x86-64, but we will try to release
 a variant for Linux x86-64 in the future.
 
+NOTE: This feature is experimental in Jaybird 5, and may be removed or radically
+changed in future versions.
+
+Usage
+-----
+
+To use this bundle, you need to depend on this library, your preferred
+Jaybird 5 (or higher) version, and the JNA version required by that version of
+Jaybird:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.firebirdsql.embedded</groupId>
+        <artifactId>jaybird-firebird-embedded-win32-x86-64</artifactId>
+        <version>4.0.2.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>org.firebirdsql.jdbc</groupId>
+        <artifactId>jaybird</artifactId>
+        <version>5.0.0.java11</version>
+    </dependency>
+    <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna</artifactId>
+        <version>5.12.1</version>
+    </dependency>
+</dependencies>
+```
+
+You can now use the embedded protocol without having Firebird embedded installed:
+
+```java
+public class Example {
+    public static void main(String[] args) {
+        try (Connection connection = DriverManager.getConnection(
+                "jdbc:firebirdsql:embedded:mydb.fdb", "user", "")) {
+            // use connection
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
 Build information
 -----------------
 
