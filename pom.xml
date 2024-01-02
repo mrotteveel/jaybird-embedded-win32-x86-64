@@ -6,7 +6,7 @@
 
     <groupId>org.firebirdsql.embedded</groupId>
     <artifactId>jaybird-firebird-embedded-win32-x86-64</artifactId>
-    <version>4.0.4.0-SNAPSHOT</version>
+    <version>4.0.4.0-alpha-1</version>
     <packaging>jar</packaging>
     <name>Firebird Embedded Distribution for Jaybird for Windows x86-64</name>
     <description>Firebird embedded library packaged for use with Jaybird 5 and higher</description>
