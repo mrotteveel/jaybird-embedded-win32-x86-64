@@ -1,5 +1,7 @@
 # Firebird Embedded Windows x86-64 for Jaybird
 
+[![MavenCentral](https://maven-badges.herokuapp.com/maven-central/org.firebirdsql.embedded/jaybird-firebird-embedded-win32-x86-64/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.firebirdsql.embedded/jaybird-firebird-embedded-win32-x86-64/)
+
 This is an experimental library to provide Firebird embedded on the classpath of 
 Java applications. It requires Jaybird 5.0.0 or higher.
 
@@ -21,7 +23,7 @@ Jaybird:
     <dependency>
         <groupId>org.firebirdsql.embedded</groupId>
         <artifactId>jaybird-firebird-embedded-win32-x86-64</artifactId>
-        <version>4.0.2.0-alpha-1</version>
+        <version>4.0.4.0-alpha-1</version>
     </dependency>
     <dependency>
         <groupId>org.firebirdsql.jdbc</groupId>
