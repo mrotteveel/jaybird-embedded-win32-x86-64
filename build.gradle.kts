@@ -4,7 +4,7 @@ allprojects {
     }
 
     group = "org.firebirdsql.embedded"
-    version = "5.0.3.0-SNAPSHOT"
+    version = "5.0.3.0-alpha-1"
 
     tasks.withType<JavaCompile> {
         options.encoding = "UTF-8"
