@@ -15,25 +15,43 @@ Usage
 -----
 
 To use this bundle, you need to depend on this library, your preferred
-Jaybird 5 (or higher) version, and the JNA version required by that version of
-Jaybird:
+Jaybird version:
+
+For Jaybird 6 and higher, depend on `jaybird-native`:
 
 ```xml
 <dependencies>
     <dependency>
         <groupId>org.firebirdsql.embedded</groupId>
         <artifactId>jaybird-firebird-embedded-win32-x86-64</artifactId>
-        <version>4.0.4.0-alpha-1</version>
+        <version>5.0.3.0-alpha-1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.firebirdsql.jdbc</groupId>
+        <artifactId>jaybird-native</artifactId>
+        <version>6.0.3</version>
+    </dependency>
+</dependencies>
+```
+
+For Jaybird 5, you need to depend on `jaybird` and its expected JNA version:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.firebirdsql.embedded</groupId>
+        <artifactId>jaybird-firebird-embedded-win32-x86-64</artifactId>
+        <version>5.0.3.0-alpha-1</version>
     </dependency>
     <dependency>
         <groupId>org.firebirdsql.jdbc</groupId>
         <artifactId>jaybird</artifactId>
-        <version>5.0.3.java11</version>
+        <version>5.0.10.java11</version>
     </dependency>
     <dependency>
         <groupId>net.java.dev.jna</groupId>
         <artifactId>jna</artifactId>
-        <version>5.12.1</version>
+        <version>5.17.0</version>
     </dependency>
 </dependencies>
 ```

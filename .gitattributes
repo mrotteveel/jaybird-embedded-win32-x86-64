@@ -3,3 +3,6 @@
 *.res binary
 *.dat binary
 *.msg binary
+
+*.bat       text    eol=crlf
+/gradlew    text    eol=lf
